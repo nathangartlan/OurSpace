@@ -13,12 +13,20 @@ class GroceryTableViewController: UITableViewController {
     
     //Properties: 
     
- //   var groceries = [Grocery]()
+    var groceriesArray = ["Milk","Eggs","Paper Towels","Hand Soap","Napkins","Trash Bags"]
     
     
     
     
-    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Grocery Item", for: IndexPath)
+    }
     
     
     
@@ -38,7 +46,7 @@ class GroceryTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+/*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
@@ -48,6 +56,7 @@ class GroceryTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    */
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
