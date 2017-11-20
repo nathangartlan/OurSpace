@@ -20,6 +20,7 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        FirebaseApp.configure()
         // Do any additional setup after loading the view.
         equalLabel.text = ""
     }
@@ -69,12 +70,16 @@ class SignUpViewController: UIViewController {
         if secondPassword.text != passwordField.text{
             equalLabel.text = "Passwords do not match";
         }
-        Auth.auth().createUser(withEmail: emailField.text, password: passwordField){ ( user, error) in
-            if let error = error {
-                self.showMessagePrompt(error.localizedDescription)
-                return
+        if let email = emailField.text{
+            if let password = passwordField.text{
+                Auth.auth().createUser(withEmail: emailField.text, password: passwordField){ ( user, error) in
+                if let error = error {
+                    self.showMessagePrompt(error.localizedDescription)
+                    return
+                }
+                [self .performSegue(withIdentifier: "LoginViewController", sender: self)]
+                }
             }
-            [self .performSegue(withIdentifier: "LoginViewController", sender: self)]
         }
     }
     override func didReceiveMemoryWarning() {
