@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rg9-Li-FO7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rg9-Li-FO7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="T5n-tK-Ef8">
             <objects>
-                <viewController id="rg9-Li-FO7" customClass="LoginViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" id="rg9-Li-FO7" customClass="LoginViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lf8-41-GKg"/>
                         <viewControllerLayoutGuide type="bottom" id="qOx-WE-nXj"/>
@@ -49,13 +49,14 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="rg9-Li-FO7" eventType="touchUpInside" id="d7e-yF-ruS"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="test2" id="BhK-Dg-fQG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJO-z1-NlP">
                                 <rect key="frame" x="220" y="434" width="55" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="LKt-kr-BUz" kind="show" id="ps5-eX-DgX"/>
+                                    <segue destination="LKt-kr-BUz" kind="show" id="mWv-6n-iGC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,7 +88,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="Ydl-Ix-cIq">
             <objects>
-                <viewController id="LKt-kr-BUz" customClass="SignUpViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="SignUpViewController" storyboardIdentifier="SignUpViewController" id="LKt-kr-BUz" customClass="SignUpViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5ku-dN-nwV"/>
                         <viewControllerLayoutGuide type="bottom" id="OOB-Kf-Czf"/>
@@ -137,6 +138,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp:" destination="LKt-kr-BUz" eventType="touchUpInside" id="ogX-WR-r0O"/>
+                                    <segue destination="rg9-Li-FO7" kind="show" identifier="test" id="EHd-29-sYR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ns-VJ-DIH">
@@ -158,12 +160,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y41-fI-U2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-842.39999999999998" y="778.56071964017997"/>
+            <point key="canvasLocation" x="-634" y="799"/>
         </scene>
         <!--HomeView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="HomeView" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" title="HomeView" id="BYZ-38-t0r" customClass="HomeViewController" customModule="ourSpace1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -294,7 +296,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ep-8M-i5K" id="E3O-ca-goA">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqm-w7-AfI">
@@ -352,6 +354,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="abN-Xr-0z9"/>
+        <segue reference="BhK-Dg-fQG"/>
     </inferredMetricsTieBreakers>
 </document>
