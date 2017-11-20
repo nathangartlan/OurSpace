@@ -25,7 +25,8 @@ class GroceryTableViewController: UITableViewController {
         return 7
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Grocery Item", for: IndexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Grocery Item", for: indexPath)
+        return cell
     }
     
     

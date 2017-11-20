@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		001684F0EE6BFAD8AD7A30F1 /* Pods_ourSpace1_2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C5326C6C63A62A70D21379 /* Pods_ourSpace1_2UITests.framework */; };
 		68177C431FBCF3010083D211 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68177C421FBCF3010083D211 /* GoogleService-Info.plist */; };
+		68DD22EC1FC2572400281CC8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DD22EB1FC2572400281CC8 /* LoginViewController.swift */; };
+		68DD22EE1FC2630800281CC8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DD22ED1FC2630800281CC8 /* SignUpViewController.swift */; };
 		782B07941FBA102700BCEDCC /* ChoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782B07931FBA102700BCEDCC /* ChoresViewController.swift */; };
 		78E32DEF1FB9779D0055A207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E32DEE1FB9779D0055A207 /* AppDelegate.swift */; };
 		78E32DF11FB9779D0055A207 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E32DF01FB9779D0055A207 /* HomeViewController.swift */; };
@@ -46,6 +48,8 @@
 		1E15D770C6A0EE809B39B2F2 /* Pods-ourSpace1.2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourSpace1.2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ourSpace1.2Tests/Pods-ourSpace1.2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E47348C4D8A8D013B471459 /* Pods-ourSpace1.2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourSpace1.2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ourSpace1.2/Pods-ourSpace1.2.debug.xcconfig"; sourceTree = "<group>"; };
 		68177C421FBCF3010083D211 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68DD22EB1FC2572400281CC8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		68DD22ED1FC2630800281CC8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6CF23D3AB552690AA40759A4 /* Pods-ourSpace1.2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ourSpace1.2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ourSpace1.2UITests/Pods-ourSpace1.2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		782B07931FBA102700BCEDCC /* ChoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoresViewController.swift; sourceTree = "<group>"; };
 		78E32DEB1FB9779D0055A207 /* ourSpace1.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ourSpace1.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +153,8 @@
 			children = (
 				78E32DEE1FB9779D0055A207 /* AppDelegate.swift */,
 				78E32DF01FB9779D0055A207 /* HomeViewController.swift */,
+				68DD22EB1FC2572400281CC8 /* LoginViewController.swift */,
+				68DD22ED1FC2630800281CC8 /* SignUpViewController.swift */,
 				78E32E1C1FB978FE0055A207 /* GroceryViewController.swift */,
 				782B07931FBA102700BCEDCC /* ChoresViewController.swift */,
 				78EC94851FBA3900005B5614 /* GroceryTableViewCell.swift */,
@@ -476,7 +482,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DD22EC1FC2572400281CC8 /* LoginViewController.swift in Sources */,
 				782B07941FBA102700BCEDCC /* ChoresViewController.swift in Sources */,
+				68DD22EE1FC2630800281CC8 /* SignUpViewController.swift in Sources */,
 				78E32DF11FB9779D0055A207 /* HomeViewController.swift in Sources */,
 				78E32DEF1FB9779D0055A207 /* AppDelegate.swift in Sources */,
 				78EC94861FBA3900005B5614 /* GroceryTableViewCell.swift in Sources */,
