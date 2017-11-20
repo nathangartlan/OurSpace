@@ -15,7 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
-        FirebaseApp.configure()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -51,14 +50,13 @@ class LoginViewController: UIViewController {
             if let password = passwordField.text{
                 Auth.auth().signIn(withEmail: email, password: password){(user, error) in
                     if let error = error {
-                        self.showMessagePrompt(error.localizedDescription)
+                       // self.showMessagePrompt(error.localizedDescription)
                         return
                     }
                     [self.performSegue(withIdentifier: "HomeViewController", sender: self)]
                 }
             }
-        }
-    }
+        }    }
     
     @IBAction func signUp(_ sender: Any) {
         [self.performSegue(withIdentifier: "SignUpViewController", sender: self)]
